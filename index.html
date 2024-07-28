@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比较价格</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>比较价格</h1>
+        <div class="producto" id="producto1">
+            <h2>产品 1</h2>
+            <label for="cantidad1">数量:</label>
+            <input type="number" id="cantidad1" required>
+            <select id="unidad1" onchange="actualizarUnidades('unidad1')">
+                <option value="">选择测量单位...</option>
+                <option value="unidad">单位</option>
+                <option value="ml">毫升</option>
+                <option value="litros">升</option>
+                <option value="gramas">克</option>
+                <option value="quilos">千克</option>
+                <option value="centimetros">厘米</option>
+                <option value="metros">米</option>
+            </select>
+            <label for="precio1">价格: $</label>
+            <input type="number" id="precio1" required>
+            <p id="costo1"></p>
+        </div>
+        
+        <div class="producto" id="producto2">
+            <h2>产品 2</h2>
+            <label for="cantidad2">数量:</label>
+            <input type="number" id="cantidad2" required>
+            <select id="unidad2" onchange="actualizarUnidades('unidad2')">
+                <option value="">选择测量单位...</option>
+                <option value="unidad">单位</option>
+                <option value="ml">毫升</option>
+                <option value="litros">升</option>
+                <option value="gramas">克</option>
+                <option value="quilos">千克</option>
+                <option value="centimetros">厘米</option>
+                <option value="metros">米</option>
+            </select>
+            <label for="precio2">价格: $</label>
+            <input type="number" id="precio2" required>
+            <p id="costo2"></p>
+        </div>
+        
+        <button onclick="compararPrecios()">计算</button>
+        <button onclick="limpiarCampos()">清除</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

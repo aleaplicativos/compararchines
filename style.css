@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 保证主体占满整个屏幕高度 */
+  margin: 0;
+  padding-top: 20px; /* 添加上部间距 */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* 调整移动设备宽度 */
+  max-width: 400px; /* 最大宽度限制 */
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px; /* 添加下部间距 */
+}
+
+.producto {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:last-of-type {
+  background-color: #ffc107;
+}
+
+button:last-of-type:hover {
+  background-color: #e0a800;
+}
+
+.verde {
+  background-color: #198754; /* 更深的绿色 */
+}
+
+.rojo {
+  background-color: #dc3545; /* 更鲜艳的红色 */
+}
+
+#mensaje {
+  color: red;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
